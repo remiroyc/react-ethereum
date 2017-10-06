@@ -4,7 +4,7 @@
     "lodash.uniqueid": "^4.0.1",
     "prop-types": "^15.6.0"
   },
-  "name": "react-ether-qrcode",
+  "name": "react-ethereum",
   "version": "1.0.0",
   "main": "lib/index.js",
   "devDependencies": {
