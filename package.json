@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "ethereum-qr-code": "^0.1.6",
+    "lodash.uniqueid": "^4.0.1",
+    "prop-types": "^15.6.0"
+  },
+  "name": "react-ether-qrcode",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.6.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "peerDependencies": {},
+  "scripts": {
+    "build": "babel ./src -d lib",
+    "prepublish": "npm run build"
+  }
+}
