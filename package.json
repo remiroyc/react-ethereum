@@ -14,10 +14,12 @@
     "babel-preset-react": "^6.24.1",
     "webpack": "^3.6.0"
   },
-  "author": "",
+  "author": "Rémi Roycourt",
   "license": "ISC",
-  "description": "",
-  "peerDependencies": {},
+  "description": "Ethereum Address QR Code Generator",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
   "scripts": {
     "build": "babel ./src -d lib",
     "prepublish": "npm run build"
