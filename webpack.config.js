@@ -5,7 +5,7 @@ module.exports = {
     entry: "./src/EthereumQRCode",
     output: {
         path: path.join(__dirname, 'lib'),
-        filename: "bundle.js",
+        filename: "EthereumQRCode.js",
         libraryTarget: "commonjs2"
     },
     module: {
