@@ -3,7 +3,8 @@ import EthereumQRplugin from 'ethereum-qr-code'
 import uniqueId from 'lodash.uniqueid';
 import PropTypes from 'prop-types';
 
-class EtherumQRCode extends Component {
+class EthereumQRCode extends Component {
+
   constructor(props) {
     super(props);
     this.generator = new EthereumQRplugin();
@@ -20,11 +21,16 @@ class EtherumQRCode extends Component {
 
   generateQRCode() {
 
-    const sendDetails = {
-      to: this.props.to,
-      value: this.props.value,
-      gas: this.props.gas
-    };
+    let sendDetails;
+    if (this.props.uriScheme) {
+      sendDetails = this.generator.readStringToJSON(this.props.uriScheme);
+    } else {
+      sendDetails = {
+        to: this.props.to,
+        value: this.props.value,
+        gas: this.props.gas
+      };
+    }
 
     const qrCode = this.generator.toCanvas(sendDetails, {
       selector: `#${this.id}`,
@@ -44,11 +50,12 @@ class EtherumQRCode extends Component {
   }
 }
 
-EtherumQRCode.propTypes = {
-  to: PropTypes.string.isRequired,
-  value: PropTypes.number.isRequired,
-  gas: PropTypes.number.isRequired,
+EthereumQRCodeEthereum.propTypes = {
+  uriScheme: PropTypes.string,
+  to: PropTypes.string,
+  value: PropTypes.number,
+  gas: PropTypes.number,
   afterGenerate: PropTypes.func
 }
 
-export default EtherumQRCode
+export default EthereumQRCode
