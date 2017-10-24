@@ -16,6 +16,10 @@
   },
   "author": "Rémi Roycourt",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reminouche/react-ethereum"
+  },
   "description": "Ethereum Address QR Code Generator",
   "peerDependencies": {
     "react": "^16.0.0"
