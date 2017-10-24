@@ -6,7 +6,7 @@
     "react": "^16.0.0"
   },
   "name": "react-ethereum",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "devDependencies": {
     "babel-cli": "^6.26.0",
