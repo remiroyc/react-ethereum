@@ -13,5 +13,5 @@ Sample :
 URI scheme used to send ETH between accounts conforms early EIP67 proposals and Bitcoin scheme. This is built to be backward compatible.
 
 ```
-<EtherumQRCode uriScheme="ethereum:<address>[?from=<sender_address>][?value=<ethamount>][?gas=<suggestedGas>]" />
+<EtherumQRCode uriScheme={"ethereum:<address>[?from=<sender_address>][?value=<ethamount>][?gas=<suggestedGas>]"} />
 ```
