@@ -5,7 +5,7 @@
     "prop-types": "^15.6.0"
   },
   "name": "react-ethereum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "devDependencies": {
     "babel-cli": "^6.26.0",
